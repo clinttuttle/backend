@@ -51,7 +51,8 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'clintbackend'
-          slot-name: 'Production'
+          slot-name: ''
           package: .
 
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CE0450B7D8F64498951FD3FD35562FDF }}
+
